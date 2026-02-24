@@ -1,0 +1,23 @@
+*** app.py	2026-02-24
+--- app.py.secure	2026-02-24
+***************
+*** 29,36 ****
+-            if mode == "vulnerable":
+-                sql = f"SELECT user_id, token FROM sessions WHERE user_id = '{user_id}'"
+-                rows = conn.execute(sql).fetchall()
+-                return jsonify({"mode": mode, "query": sql, "results": [dict(r) for r in rows]})
+-            rows = conn.execute(
+-                "SELECT user_id, token FROM sessions WHERE user_id = ?",
+-                (user_id,),
+-            ).fetchall()
+--- 29,40 ----
++            if mode == "vulnerable":
++                sql = f"SELECT user_id, token FROM sessions WHERE user_id = '{user_id}'"
++                rows = conn.execute(sql).fetchall()
++                return jsonify({"mode": mode, "query": sql, "results": [dict(r) for r in rows]})
++
++            # Secure remediation: treat user input as data and use a parameterized query.
++            rows = conn.execute(
++                "SELECT user_id, token FROM sessions WHERE user_id = ?",
++                (user_id,),
++            ).fetchall()

@@ -1,0 +1,3 @@
+12:00:00.000001 IP 127.0.0.1 > 127.0.0.1: ICMP echo request, id 1000, seq 1, length 64
+12:00:00.000010 IP 127.0.0.1 > 127.0.0.1: ICMP echo reply, id 1000, seq 1, length 64
+12:00:01.000001 IP 127.0.0.1.5000 > 127.0.0.1.43210: Flags [P.], seq 1:15, ack 1, win 512, length 14

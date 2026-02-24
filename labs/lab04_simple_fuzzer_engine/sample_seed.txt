@@ -1,0 +1,5 @@
+# Seed corpus for deterministic lab demos
+A
+username=alice
+CRASHME
+LENxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

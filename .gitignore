@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Build outputs (labs)
+labs/lab01_stack_overflow/build/*
+!labs/lab01_stack_overflow/build/.gitkeep
+labs/lab02_memory_corruption_suite/build/*
+!labs/lab02_memory_corruption_suite/build/.gitkeep
+
+# Runtime artifacts
+labs/lab04_simple_fuzzer_engine/artifacts/crashes/*
+!labs/lab04_simple_fuzzer_engine/artifacts/crashes/.gitkeep
+labs/lab04_simple_fuzzer_engine/artifacts/reports/*
+!labs/lab04_simple_fuzzer_engine/artifacts/reports/.gitkeep
+labs/lab06_mock_web_vulnerability/data/*.sqlite3
+capstone/vulnerable_mobile_backend/*.sqlite3
+labs/lab07_packet_analysis/*.pcap
+
+# OS/editor
+.DS_Store
+.vscode/*.code-workspace
