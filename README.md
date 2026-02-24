@@ -1,5 +1,7 @@
 # Offensive Security Software Engineering Lab
 
+[![CI](https://github.com/parrsi01/offensive_security_software_engineering_lab_repo/actions/workflows/ci.yml/badge.svg)](https://github.com/parrsi01/offensive_security_software_engineering_lab_repo/actions/workflows/ci.yml)
+
 Author: Simon Parris  
 Generated: 2026-02-24
 
